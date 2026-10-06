@@ -9,7 +9,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
@@ -17,22 +17,41 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                        heading: ['Space Grotesk', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Manrope', 'sans-serif'],
                     },
                     colors: {
+                        white: '#123b2c',
+                        slate: {
+                            100: '#173d30',
+                            200: '#254b3b',
+                            300: '#3d5e4c',
+                            400: '#5b7162',
+                            500: '#74897b',
+                            600: '#a5b7aa',
+                            700: '#d3e0d7',
+                            800: '#e6eee8',
+                            900: '#f4f8f5',
+                            950: '#102f23',
+                        },
                         industrial: {
-                            50: '#f8fafc',
-                            100: '#f1f5f9',
-                            800: '#1e293b',
-                            900: '#0f172a',
-                            950: '#020617',
+                            50: '#ffffff',
+                            100: '#f4f8f5',
+                            800: '#dce8df',
+                            900: '#f4f8f5',
+                            950: '#ffffff',
                         },
                         amberGold: {
-                            400: '#fbbf24',
-                            500: '#f59e0b',
-                            600: '#d97706',
-                            700: '#b45309',
+                            400: '#237b51',
+                            500: '#176642',
+                            600: '#145638',
+                            700: '#10452e',
+                        },
+                        emerald: {
+                            400: '#237b51',
+                            500: '#176642',
+                            600: '#145638',
+                            900: '#123b2c',
                         }
                     }
                 }
@@ -41,43 +60,47 @@
     </script>
     <style>
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #0F172A;
-            color: #F8FAFC;
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f8f5;
+            color: #173d30;
         }
         h1, h2, h3, h4, .font-heading {
-            font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Manrope', sans-serif;
         }
         .bg-grid-pattern {
-            background-image: radial-gradient(rgba(245, 158, 11, 0.12) 1px, transparent 1px);
+            background-image: radial-gradient(rgba(23, 102, 66, 0.08) 1px, transparent 1px);
             background-size: 28px 28px;
         }
         .glass-card {
-            background: rgba(30, 41, 59, 0.7);
+            background: rgba(255, 255, 255, 0.88);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(23, 102, 66, 0.12);
         }
         .glass-card-hover {
             transition: all 0.3s ease;
         }
         .glass-card-hover:hover {
             transform: translateY(-4px);
-            border-color: rgba(245, 158, 11, 0.4);
-            box-shadow: 0 12px 30px -10px rgba(245, 158, 11, 0.15);
+            border-color: rgba(23, 102, 66, 0.35);
+            box-shadow: 0 12px 30px -10px rgba(23, 102, 66, 0.14);
         }
         /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #0f172a;
+            background: #f4f8f5;
         }
         ::-webkit-scrollbar-thumb {
-            background: #334155;
+            background: #b8cbbd;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #d97706;
+            background: #176642;
+        }
+        .bg-emerald-600.text-white,
+        .bg-emerald-500.text-white {
+            color: #ffffff;
         }
         @media (max-width: 639px) {
             section[id] {
@@ -154,7 +177,7 @@
         <section id="home" class="relative pt-8 pb-12 sm:pt-12 sm:pb-20 md:pt-20 md:pb-28 overflow-hidden">
             <!-- Ambient Light Overlay -->
             <div class="absolute top-0 right-1/4 w-[500px] h-[500px] bg-amberGold-500/10 blur-[130px] rounded-full pointer-events-none"></div>
-            <div class="absolute bottom-0 left-10 w-[400px] h-[400px] bg-blue-600/10 blur-[140px] rounded-full pointer-events-none"></div>
+            <div class="absolute bottom-0 left-10 w-[400px] h-[400px] bg-emerald-600/5 blur-[140px] rounded-full pointer-events-none"></div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
