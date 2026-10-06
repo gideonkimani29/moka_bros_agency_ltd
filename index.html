@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moka Bros Agency LTD | Premier Industrial & Commercial Real Estate Eldoret</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        industrial: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        amberGold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0F172A;
+            color: #F8FAFC;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(245, 158, 11, 0.12) 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card-hover {
+            transition: all 0.3s ease;
+        }
+        .glass-card-hover:hover {
+            transform: translateY(-4px);
+            border-color: rgba(245, 158, 11, 0.4);
+            box-shadow: 0 12px 30px -10px rgba(245, 158, 11, 0.15);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d97706;
+        }
+        @media (max-width: 639px) {
+            section[id] {
+                scroll-margin-top: 4rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-industrial-900 text-slate-100 min-h-screen flex flex-col justify-between antialiased bg-grid-pattern">
+
+    <header class="sticky top-0 z-40 w-full glass-card border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-amberGold-500 to-amberGold-700 flex items-center justify-center text-slate-950 font-bold shadow-lg shadow-amberGold-500/20 group-hover:scale-105 transition-transform">
+                        <i data-lucide="warehouse" class="w-6 h-6 md:w-7 md:h-7 text-slate-950"></i>
+                    </div>
+                    <div>
+                        <span class="text-lg md:text-xl font-bold tracking-tight text-white block leading-none font-heading">MOKA BROS</span>
+                        <span class="text-[10px] md:text-xs font-semibold tracking-widest text-amberGold-400 uppercase">AGENCY LTD · ELDORET</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+                    <a href="#home" class="hover:text-amberGold-400 transition-colors">Home</a>
+                    <a href="#properties" class="hover:text-amberGold-400 transition-colors">Properties</a>
+                    <a href="#calculator" class="hover:text-amberGold-400 transition-colors">Yield Calculator</a>
+                    <a href="#services" class="hover:text-amberGold-400 transition-colors">Services</a>
+                    <a href="#reviews" class="hover:text-amberGold-400 transition-colors">Reviews</a>
+                    <a href="#valuation" class="hover:text-amberGold-400 transition-colors">Land Valuation</a>
+                </nav>
+
+                <!-- Action Buttons -->
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="tel:+254729950302" class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 text-xs font-semibold border border-slate-700 transition">
+                        <i data-lucide="phone" class="w-4 h-4 text-amberGold-400"></i>
+                        <span>+254 729 950302</span>
+                    </a>
+                    <a href="https://wa.me/254729950302?text=Hello%20Moka%20Bros%20Agency,%20I%20am%20interested%20in%20industrial%20real%20estate%20in%20Eldoret." target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-md shadow-emerald-900/30 transition">
+                        <i data-lucide="message-square" class="w-4 h-4"></i>
+                        <span>WhatsApp Us</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu toggle -->
+                <button onclick="toggleMobileMenu()" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu" class="md:hidden p-2 rounded-lg text-slate-300 hover:bg-slate-800">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="hidden md:hidden max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-slate-800 bg-industrial-950/95 px-4 pt-4 pb-6 space-y-3">
+            <a href="#home" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 font-medium hover:text-amberGold-400">Home</a>
+            <a href="#properties" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 font-medium hover:text-amberGold-400">Industrial Listings</a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 font-medium hover:text-amberGold-400">Rent Calculator</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 font-medium hover:text-amberGold-400">Services</a>
+            <a href="#reviews" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 font-medium hover:text-amberGold-400">Client Reviews</a>
+            <a href="#valuation" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 font-medium hover:text-amberGold-400">List Your Land</a>
+            <div class="pt-3 border-t border-slate-800 flex flex-col gap-2">
+                <a href="tel:+254729950302" class="w-full text-center py-2.5 rounded-lg bg-slate-800 text-slate-100 font-semibold text-sm">
+                    Call: +254 729 950302
+                </a>
+                <a href="https://wa.me/254729950302" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-emerald-600 text-white font-semibold text-sm">
+                    WhatsApp Chat
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section id="home" class="relative pt-8 pb-12 sm:pt-12 sm:pb-20 md:pt-20 md:pb-28 overflow-hidden">
+            <!-- Ambient Light Overlay -->
+            <div class="absolute top-0 right-1/4 w-[500px] h-[500px] bg-amberGold-500/10 blur-[130px] rounded-full pointer-events-none"></div>
+            <div class="absolute bottom-0 left-10 w-[400px] h-[400px] bg-blue-600/10 blur-[140px] rounded-full pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-6 text-left">
+                        <!-- Rating Badge -->
+                        <div class="inline-flex flex-wrap items-center gap-x-2 gap-y-1 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-slate-700 text-xs font-semibold text-amberGold-400">
+                            <div class="flex text-amberGold-400">
+                                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            </div>
+                            <span class="text-slate-200">4.4 / 5.0 Rating</span>
+                            <span class="text-slate-500">|</span>
+                            <span class="text-slate-300">Verified Industrial Realtors in Eldoret</span>
+                        </div>
+
+                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight font-heading">
+                            Industrial & Commercial Real Estate <span class="text-amberGold-400">Hub in Eldoret.</span>
+                        </h1>
+
+                        <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+                            Moka Bros Agency LTD delivers premier warehousing, heavy industrial plots, godowns, and commercial land along Eldoret’s main transport corridors (Langas, Annex, Kipkaren, Eldoret CBD, and North Rift Hubs).
+                        </p>
+
+                        <!-- Quick Stats -->
+                        <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-800/80 max-w-lg">
+                            <div>
+                                <span class="text-2xl font-bold text-white font-heading">150+</span>
+                                <p class="text-xs text-slate-400">Acres Transacted</p>
+                            </div>
+                            <div>
+                                <span class="text-2xl font-bold text-white font-heading">100%</span>
+                                <p class="text-xs text-slate-400">Title Verified</p>
+                            </div>
+                            <div>
+                                <span class="text-2xl font-bold text-white font-heading">Rexona</span>
+                                <p class="text-xs text-slate-400">Langas HQ, Eldoret</p>
+                            </div>
+                        </div>
+
+                        <!-- CTA Actions -->
+                        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
+                            <a href="#properties" class="w-full sm:w-auto justify-center px-6 py-3.5 rounded-xl bg-gradient-to-r from-amberGold-500 to-amberGold-600 hover:from-amberGold-400 hover:to-amberGold-500 text-slate-950 font-bold text-sm shadow-xl shadow-amberGold-500/20 flex items-center gap-2 transition">
+                                <i data-lucide="search" class="w-4 h-4"></i> Browse Eldoret Listings
+                            </a>
+                            <a href="#valuation" class="w-full sm:w-auto justify-center px-6 py-3.5 rounded-xl glass-card hover:bg-slate-800 text-white font-semibold text-sm flex items-center gap-2 transition">
+                                <i data-lucide="file-badge" class="w-4 h-4 text-amberGold-400"></i> Request Land Appraisal
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Quick Search Box -->
+                    <div class="lg:col-span-5">
+                        <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-700/60 shadow-2xl relative">
+                            <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-800">
+                                <div>
+                                    <h2 class="text-lg font-bold text-white font-heading">Find Industrial Property</h2>
+                                    <p class="text-xs text-slate-400">Filter Eldoret & North Rift Hubs</p>
+                                </div>
+                                <span class="p-2 rounded-lg bg-amberGold-500/10 text-amberGold-400">
+                                    <i data-lucide="filter" class="w-5 h-5"></i>
+                                </span>
+                            </div>
+
+                            <form id="heroFilterForm" onsubmit="handleHeroSearch(event)" class="space-y-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Property Category</label>
+                                    <select id="heroCategory" class="w-full bg-industrial-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-amberGold-500">
+                                        <option value="all">All Industrial & Commercial</option>
+                                        <option value="warehouse">Godowns & Warehouses</option>
+                                        <option value="industrial-land">Industrial Plots / Land</option>
+                                        <option value="commercial">Commercial Buildings / Shops</option>
+                                        <option value="farmland">Agricultural & Agro-Industrial</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Eldoret Location / Zone</label>
+                                    <select id="heroLocation" class="w-full bg-industrial-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-amberGold-500">
+                                        <option value="all">All Locations</option>
+                                        <option value="langas">Langas / Rexona Industrial Zone</option>
+                                        <option value="annex">Annex / Eldoret-Nairobi Hwy</option>
+                                        <option value="kipkaren">Kipkaren / Maili Tisa Bypass</option>
+                                        <option value="cbd">Eldoret CBD & Commercial Core</option>
+                                        <option value="agricultural-hub">Moiben / Ziwa Agro Corridors</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Intent</label>
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <label class="flex items-center justify-center p-2.5 rounded-lg border border-slate-700 bg-industrial-900 cursor-pointer hover:border-amberGold-500">
+                                            <input type="radio" name="heroType" value="sale" checked class="text-amberGold-500 focus:ring-0 mr-2">
+                                            <span class="text-xs font-medium">For Sale</span>
+                                        </label>
+                                        <label class="flex items-center justify-center p-2.5 rounded-lg border border-slate-700 bg-industrial-900 cursor-pointer hover:border-amberGold-500">
+                                            <input type="radio" name="heroType" value="lease" class="text-amberGold-500 focus:ring-0 mr-2">
+                                            <span class="text-xs font-medium">For Lease</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="w-full py-3.5 rounded-xl bg-amberGold-500 hover:bg-amberGold-400 text-slate-950 font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+                                    <i data-lucide="search" class="w-4 h-4"></i> Search Eldoret Inventory
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="properties" class="py-16 bg-industrial-950/60 border-y border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                    <div>
+                        <div class="flex items-center gap-2 text-amberGold-400 font-semibold text-xs tracking-wider uppercase mb-2">
+                            <i data-lucide="building-2" class="w-4 h-4"></i> Verified Inventory
+                        </div>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-white font-heading">Featured Industrial & Commercial Listings</h2>
+                    </div>
+
+                    <!-- Category Filter Buttons -->
+                    <div class="flex flex-nowrap gap-2 overflow-x-auto pb-2 md:flex-wrap md:overflow-visible md:pb-0" id="propertyFilters">
+                        <button onclick="filterListings('all')" class="filter-btn shrink-0 active-filter px-4 py-2.5 rounded-lg text-xs font-semibold bg-amberGold-500 text-slate-950 shadow">All Listings</button>
+                        <button onclick="filterListings('warehouse')" class="filter-btn shrink-0 px-4 py-2.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700">Godowns & Warehouses</button>
+                        <button onclick="filterListings('industrial-land')" class="filter-btn shrink-0 px-4 py-2.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700">Industrial Land</button>
+                        <button onclick="filterListings('commercial')" class="filter-btn shrink-0 px-4 py-2.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700">Commercial Buildings</button>
+                    </div>
+                </div>
+
+                <!-- Properties Grid -->
+                <div id="propertiesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Javascript populates property cards dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <div id="propertyModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+            <div class="glass-card max-w-3xl w-full rounded-2xl overflow-hidden border border-slate-700 shadow-2xl max-h-[90vh] flex flex-col">
+                <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-industrial-950">
+                    <h3 id="modalTitle" class="text-lg font-bold text-white font-heading">Property Details</h3>
+                    <button onclick="closeModal()" class="p-1 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+                <div id="modalBody" class="p-6 overflow-y-auto space-y-6 text-slate-300 text-sm">
+                    <!-- Dynamic modal content -->
+                </div>
+            </div>
+        </div>
+
+        <section id="calculator" class="py-12 sm:py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-800">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                        
+                        <div class="lg:col-span-5 space-y-4">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amberGold-500/10 text-amberGold-400 text-xs font-semibold">
+                                <i data-lucide="calculator" class="w-4 h-4"></i> Investor Tool
+                            </div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-white font-heading">Eldoret Industrial Lease & Yield Estimator</h2>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Estimate monthly leasing expenses or annual rental yield for warehouses and industrial yards in Rexona, Langas, and the Eldoret bypass corridors.
+                            </p>
+                            
+                            <div class="p-4 rounded-xl bg-industrial-950/80 border border-slate-800 space-y-2 text-xs text-slate-400">
+                                <div class="flex items-center gap-2 text-amberGold-400 font-semibold">
+                                    <i data-lucide="info" class="w-4 h-4"></i> Eldoret Industrial Rate Benchmark
+                                </div>
+                                <p>Average Godown Rates: <span class="text-white font-bold">KES 35 - 55 / sq ft / month</span> based on 3-phase power & trailer access accessibility.</p>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-7 bg-industrial-950/90 rounded-2xl p-6 border border-slate-800 space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Space Size (Sq. Feet)</label>
+                                    <input type="number" id="calcSqFt" value="10000" min="500" step="500" oninput="calculateLeaseYield()" class="w-full bg-industrial-900 border border-slate-700 rounded-xl p-3 text-white focus:outline-none focus:border-amberGold-500 text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Rate per Sq. Ft (KES / Mo)</label>
+                                    <input type="number" id="calcRate" value="45" min="20" max="150" oninput="calculateLeaseYield()" class="w-full bg-industrial-900 border border-slate-700 rounded-xl p-3 text-white focus:outline-none focus:border-amberGold-500 text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Lease Tenure (Years)</label>
+                                    <select id="calcTenure" onchange="calculateLeaseYield()" class="w-full bg-industrial-900 border border-slate-700 rounded-xl p-3 text-white focus:outline-none focus:border-amberGold-500 text-sm">
+                                        <option value="1">1 Year Lease</option>
+                                        <option value="3" selected>3 Years Lease</option>
+                                        <option value="5">5 Years Lease</option>
+                                        <option value="10">10 Years Industrial Lease</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Estimated Cap Rate / Yield (%)</label>
+                                    <input type="number" id="calcCapRate" value="9.5" step="0.5" oninput="calculateLeaseYield()" class="w-full bg-industrial-900 border border-slate-700 rounded-xl p-3 text-white focus:outline-none focus:border-amberGold-500 text-sm">
+                                </div>
+                            </div>
+
+                            <!-- Calculations Display Output -->
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800">
+                                <div class="p-3.5 rounded-xl bg-industrial-900 border border-slate-800">
+                                    <span class="text-xs text-slate-400 block mb-1">Monthly Rent</span>
+                                    <span id="resMonthly" class="text-lg font-bold text-amberGold-400 font-heading">KES 450,000</span>
+                                </div>
+                                <div class="p-3.5 rounded-xl bg-industrial-900 border border-slate-800">
+                                    <span class="text-xs text-slate-400 block mb-1">Annual Outlay</span>
+                                    <span id="resAnnual" class="text-lg font-bold text-white font-heading">KES 5,400,000</span>
+                                </div>
+                                <div class="p-3.5 rounded-xl bg-industrial-900 border border-slate-800">
+                                    <span class="text-xs text-slate-400 block mb-1">Estimated Asset Value</span>
+                                    <span id="resValuation" class="text-lg font-bold text-emerald-400 font-heading">KES 56.8 Million</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-end pt-2">
+                                <a href="https://wa.me/254729950302?text=I%20used%20your%20Yield%20Calculator%20for%20a%20warehouse%20space.%20Can%20we%20discuss?" target="_blank" class="w-full sm:w-auto justify-center px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs flex items-center gap-2">
+                                    <i data-lucide="send" class="w-4 h-4"></i> Send Calculation to Agent
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 bg-industrial-950/80 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs font-semibold text-amberGold-400 uppercase tracking-widest">End-to-End Real Estate Expertise</span>
+                    <h2 class="text-2xl sm:text-4xl font-bold text-white font-heading mt-2">Services Tailored For Industrial Investors</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="glass-card p-6 rounded-2xl glass-card-hover space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center">
+                            <i data-lucide="factory" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white font-heading">Industrial Site Selection</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Acquisition of heavy industrial plots with road access, three-phase power connectivity, and proximity to the Eldoret Bypass & A104 Northern Corridor.
+                        </p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="glass-card p-6 rounded-2xl glass-card-hover space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center">
+                            <i data-lucide="boxes" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white font-heading">Godown & Logistics Leasing</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Brokerage for high-clearance warehouses, storage godowns, and transport holding yards in Rexona, Langas, and Kipkaren.
+                        </p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="glass-card p-6 rounded-2xl glass-card-hover space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white font-heading">Title Due Diligence & Legal</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Verification of land searches, Ministry of Lands registry checks, RIM maps, beacon verification, and green card verification in Uasin Gishu County.
+                        </p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="glass-card p-6 rounded-2xl glass-card-hover space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center">
+                            <i data-lucide="building" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white font-heading">Commercial Property Management</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Tenant screening, rent collection, facility maintenance, and operational oversight for commercial plazas and industrial parks.
+                        </p>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="glass-card p-6 rounded-2xl glass-card-hover space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center">
+                            <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white font-heading">Land Valuation & Advisory</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Property appraisal and market value assessment for collateral, sale, development, and portfolio structuring in Western Kenya.
+                        </p>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="glass-card p-6 rounded-2xl glass-card-hover space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center">
+                            <i data-lucide="tractor" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white font-heading">Agro-Industrial Land</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Large-acreage farm land and grain storage site sourcing in Moiben, Ziwa, and surrounding North Rift agricultural hubs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="py-12 sm:py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
+                    <div>
+                        <div class="flex items-center gap-2 text-amberGold-400 font-semibold text-xs tracking-wider uppercase mb-2">
+                            <i data-lucide="badge-check" class="w-4 h-4"></i> Verified Google Reviews
+                        </div>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-white font-heading">What Our Clients Say</h2>
+                    </div>
+
+                    <div class="flex items-center gap-4 glass-card px-5 py-3 rounded-2xl border border-slate-700">
+                        <div class="text-3xl font-extrabold text-white font-heading">4.4</div>
+                        <div>
+                            <div class="flex text-amberGold-400">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star-half" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <span class="text-xs text-slate-400">7 Verified Client Ratings</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Review 1 -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex text-amberGold-400">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "The most professional, reliable real estate agents. They work with integrity and provide value for your money. I will use your services any time. Thanks"
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Elphas Bengo</h4>
+                                <span class="text-xs text-slate-400">Local Investor</span>
+                            </div>
+                            <span class="text-xs text-slate-500">Google Review</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex text-amberGold-400">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "I recommend the agency for anyone seeking a professional realtor."
+                            </p>
+                            <div class="p-3 rounded-lg bg-industrial-950 text-xs text-amberGold-400 border border-slate-800/80">
+                                <strong class="text-white block">Owner Response:</strong> "Much appreciation."
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Gmedia Associates</h4>
+                                <span class="text-xs text-slate-400">Commercial Client</span>
+                            </div>
+                            <span class="text-xs text-slate-500">Google Review</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex text-amberGold-400">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "Cool agency, straightforward transactions and transparent communication throughout."
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Ogweno Dalmaz Ogola</h4>
+                                <span class="text-xs text-slate-400">Property Buyer</span>
+                            </div>
+                            <span class="text-xs text-slate-500">Google Review</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="valuation" class="py-12 sm:py-20 bg-industrial-950/90 border-t border-slate-800">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-card rounded-3xl p-5 sm:p-8 lg:p-12 border border-slate-700 shadow-2xl relative overflow-hidden">
+                    <div class="max-w-2xl mb-8">
+                        <span class="text-xs font-semibold text-amberGold-400 uppercase tracking-widest">Sell or Valuation Services</span>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-white font-heading mt-1">List Your Land or Commercial Property</h2>
+                        <p class="text-slate-300 text-sm mt-2">
+                            Are you a landowner or developer in Eldoret, Rexona, Langas, or Uasin Gishu County? Partner with Moka Bros Agency LTD for valuation, verification, and fast listing.
+                        </p>
+                    </div>
+
+                    <form id="leadForm" onsubmit="handleLeadSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name *</label>
+                                <input type="text" required placeholder="e.g. John Kipchumba" class="w-full bg-industrial-900 border border-slate-700 rounded-xl p-3 text-white focus:outline-none focus:border-amberGold-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number / WhatsApp *</label>
+                                <input type="tel" required placeholder="e.g. 0722 000 000" class="w-full bg-industrial-900 border border-slate-700 rounded-xl p-3 text-white focus:outline-none focus:border-amberGold-500 text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Service Requested</label>
+                                <select class="w-full bg-industrial-900 border border-slate-700 rounded-xl p-3 text-white focus:outline-none focus:border-amberGold-500 text-sm">
+                                    <option>List Property For Sale</option>
+                                    <option>List Warehouse / Godown For Lease</option>
+                                    <option>Request Land Valuation & Search</option>
+                                    <option>Commercial Management Inquiry</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Property Location in Eldoret</label>
+                                <input type="text" placeholder="e.g. Rexona, Langas / Kipkaren / Annex" class="w-full bg-industrial-900 border border-slate-700 rounded-xl p-3 text-white focus:outline-none focus:border-amberGold-500 text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Property Description & Dimensions</label>
+                            <textarea rows="3" placeholder="Tell us about acreage, plot numbers, title status, or specs..." class="w-full bg-industrial-900 border border-slate-700 rounded-xl p-3 text-white focus:outline-none focus:border-amberGold-500 text-sm"></textarea>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+                            <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-amberGold-500 hover:bg-amberGold-400 text-slate-950 font-bold text-sm shadow-lg transition flex items-center justify-center gap-2">
+                                <i data-lucide="send" class="w-4 h-4"></i> Submit Listing Request
+                            </button>
+                            <span class="text-xs text-slate-400 flex items-center gap-1">
+                                <i data-lucide="shield" class="w-3.5 h-3.5 text-emerald-400"></i> Your details remain confidential
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="toast" class="fixed bottom-3 left-3 right-3 sm:bottom-6 sm:left-auto sm:right-6 z-50 hidden max-w-sm glass-card border border-amberGold-500/50 p-4 rounded-xl shadow-2xl flex items-center gap-3">
+        <div class="p-2 rounded-lg bg-amberGold-500/20 text-amberGold-400">
+            <i data-lucide="check-circle" class="w-5 h-5"></i>
+        </div>
+        <div>
+            <h5 id="toastTitle" class="text-sm font-bold text-white">Success</h5>
+            <p id="toastMessage" class="text-xs text-slate-300">Action completed successfully.</p>
+        </div>
+    </div>
+
+    <footer class="bg-industrial-950 border-t border-slate-800 text-slate-400 text-sm pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-amberGold-500 flex items-center justify-center text-slate-950 font-bold">
+                            <i data-lucide="warehouse" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white font-heading tracking-tight">MOKA BROS AGENCY LTD</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Premier real estate agency specializing in industrial godowns, commercial plots, land verification, and property management across Eldoret and North Rift region.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="https://facebook.com/mokabrosagency" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:text-amberGold-400 hover:bg-slate-700 transition">
+                            <i data-lucide="facebook" class="w-4 h-4"></i>
+                        </a>
+                        <a href="https://instagram.com/mba_ltd" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:text-amberGold-400 hover:bg-slate-700 transition">
+                            <i data-lucide="instagram" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Direct Contact -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm font-heading uppercase tracking-wider">Office Location</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-amberGold-400 shrink-0 mt-0.5"></i>
+                            <span>Rexona, Langas, Eldoret, Kenya</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="navigation" class="w-4 h-4 text-amberGold-400 shrink-0"></i>
+                            <span>Plus Code: <strong class="text-white">F7M5+VR Eldoret</strong></span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-amberGold-400 shrink-0"></i>
+                            <a href="tel:+254729950302" class="hover:text-amberGold-400 transition">+254 729 950302</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Hours -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm font-heading uppercase tracking-wider">Operating Hours</h4>
+                    <ul class="space-y-1.5 text-xs text-slate-400">
+                        <li class="flex justify-between"><span>Mon - Fri:</span> <span class="text-white">7:00 AM - 5:00 PM</span></li>
+                        <li class="flex justify-between"><span>Saturday:</span> <span class="text-white">9:00 AM - 1:00 PM</span></li>
+                        <li class="flex justify-between"><span>Sunday:</span> <span class="text-amberGold-400">Closed</span></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Quick Links -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm font-heading uppercase tracking-wider">Direct Actions</h4>
+                    <div class="flex flex-col gap-2 text-xs">
+                        <a href="https://wa.me/254729950302" target="_blank" class="px-4 py-2.5 rounded-lg bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-600 hover:text-white font-semibold transition text-center">
+                            WhatsApp Property Inquiry
+                        </a>
+                        <a href="#valuation" class="px-4 py-2.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-200 hover:border-amberGold-500 font-semibold transition text-center">
+                            Request Land Search / Title Check
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; <span id="currentYear"></span> Moka Bros Agency LTD. All Rights Reserved. Eldoret, Kenya.</p>
+                <div class="flex gap-4">
+                    <span>Industrial Real Estate</span>
+                    <span>•</span>
+                    <span>Property Advisory Eldoret</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sample Real Property Data tailored for Eldoret Hub
+        const properties = [
+            {
+                id: 1,
+                title: "10,000 Sq.Ft Logistics Warehouse",
+                category: "warehouse",
+                location: "Rexona / Langas Industrial Zone",
+                price: "KES 450,000 / month",
+                type: "lease",
+                size: "10,000 Sq. Ft",
+                specs: ["3-Phase Power (100 KVA)", "24ft Ceiling Clearance", "Heavy Trailer Access Yard", "Perimeter Wall & Guardhouse"],
+                image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+                description: "Prime industrial godown with reinforced slab foundation, dedicated loading docks, and 24/7 security. Located strategically near Rexona, Langas with immediate access to the Eldoret southern bypass."
+            },
+            {
+                id: 2,
+                title: "1.5 Acre Heavy Industrial Plot",
+                category: "industrial-land",
+                location: "Kipkaren / Maili Tisa Corridor",
+                price: "KES 18,500,000",
+                type: "sale",
+                size: "1.5 Acres",
+                specs: ["Title Deed Ready", "Tarmac Road Frontage", "Water & Mains Electricity Onsite", "Flat Topography"],
+                image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
+                description: "Prime industrial plot ideal for petrol station, manufacturing plant, or logistics holding yard. Fully fenced with clear title search documentation verified by Moka Bros Agency."
+            },
+            {
+                id: 3,
+                title: "Commercial Retail Plaza & Showroom",
+                category: "commercial",
+                location: "Eldoret CBD Outer Ring",
+                price: "KES 65,000,000",
+                type: "sale",
+                size: "8,500 Sq. Ft Built Area",
+                specs: ["Fully Occupied / Yielding", "High Foot Traffic", "Dedicated Parking Bays", "Backup Generator"],
+                image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+                description: "3-Storey commercial building yielding reliable rental returns. Perfect for financial services, hardware showrooms, or institutional offices."
+            },
+            {
+                id: 4,
+                title: "5,000 Sq.Ft Medium Storage Godown",
+                category: "warehouse",
+                location: "Annex Industrial Corridor",
+                price: "KES 220,000 / month",
+                type: "lease",
+                size: "5,000 Sq. Ft",
+                specs: ["Translucent Roof Lighting", "Staff Offices & Washrooms", "Concrete Hardstanding", "Borehole Water"],
+                image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=800&q=80",
+                description: "Secure, modern storage facility in Annex area. Excellent road network connection to Eldoret-Nairobi highway."
+            },
+            {
+                id: 5,
+                title: "5-Acre Agro-Industrial Land Parcel",
+                category: "industrial-land",
+                location: "Ziwa / Moiben Transport Link",
+                price: "KES 14,000,000",
+                type: "sale",
+                size: "5.0 Acres",
+                specs: ["Agro-Processing Zone", "Red Soil Topography", "Nearby Railway Link", "Freehold Title"],
+                image: "https://images.unsplash.com/photo-1592417817098-8f3d6ef23a28?auto=format&fit=crop&w=800&q=80",
+                description: "Expansive land parcel suited for grain silos, cold storage units, or fertilizer distribution hubs in Uasin Gishu County."
+            },
+            {
+                id: 6,
+                title: "Commercial Plot (0.5 Acre) Highway Frontage",
+                category: "commercial",
+                location: "Langas / Rexona Highway Link",
+                price: "KES 12,500,000",
+                type: "sale",
+                size: "0.5 Acre",
+                specs: ["Commercial Zoning", "Corner Plot Advantage", "High Traffic Exposure", "Clean Survey Beacons"],
+                image: "https://images.unsplash.com/photo-1524813686514-a57563d77965?auto=format&fit=crop&w=800&q=80",
+                description: "Highly visible commercial corner plot near Rexona, Langas. Ideal for automotive spares center, hardware yard, or mini-mall."
+            }
+        ];
+
+        // Initialize App
+        window.onload = function() {
+            lucide.createIcons();
+            renderProperties(properties);
+            calculateLeaseYield();
+            document.getElementById('currentYear').innerText = new Date().getFullYear();
+        };
+
+        // Render Property Cards
+        function renderProperties(items) {
+            const container = document.getElementById('propertiesContainer');
+            container.innerHTML = '';
+
+            if (items.length === 0) {
+                container.innerHTML = `
+                    <div class="col-span-full text-center py-12 glass-card rounded-2xl">
+                        <i data-lucide="building-x" class="w-10 h-10 text-slate-500 mx-auto mb-2"></i>
+                        <p class="text-slate-300 font-semibold">No property matching your criteria found.</p>
+                        <p class="text-xs text-slate-500 mt-1">Contact our Rexona office directly for unlisted off-market plots.</p>
+                    </div>
+                `;
+                lucide.createIcons();
+                return;
+            }
+
+            items.forEach(prop => {
+                const card = document.createElement('div');
+                card.className = 'glass-card rounded-2xl overflow-hidden border border-slate-800 glass-card-hover flex flex-col justify-between';
+                card.innerHTML = `
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="${prop.image}" alt="${prop.title}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                            <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold uppercase ${prop.type === 'lease' ? 'bg-amberGold-500 text-slate-950' : 'bg-emerald-600 text-white'}">
+                                ${prop.type === 'lease' ? 'For Lease' : 'For Sale'}
+                            </div>
+                            <div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-industrial-950/80 backdrop-blur-sm text-xs font-semibold text-slate-200">
+                                ${prop.size}
+                            </div>
+                        </div>
+
+                        <div class="p-5 space-y-3">
+                            <div class="flex items-center gap-1.5 text-xs text-slate-400">
+                                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amberGold-400"></i>
+                                <span>${prop.location}</span>
+                            </div>
+
+                            <h3 class="text-base font-bold text-white font-heading line-clamp-1">${prop.title}</h3>
+
+                            <div class="text-lg font-extrabold text-amberGold-400 font-heading">
+                                ${prop.price}
+                            </div>
+
+                            <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+                                ${prop.specs.slice(0, 2).map(spec => `
+                                    <span class="text-[11px] px-2 py-1 rounded bg-industrial-950 text-slate-300 border border-slate-800">
+                                        • ${spec}
+                                    </span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 pt-0 flex gap-2">
+                        <button onclick="openModal(${prop.id})" class="flex-1 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition">
+                            View Details
+                        </button>
+                        <a href="https://wa.me/254729950302?text=Hello%20Moka%20Bros,%20I%20am%20interested%20in:%20${encodeURIComponent(prop.title)}" target="_blank" class="p-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white transition flex items-center justify-center">
+                            <i data-lucide="message-square" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            lucide.createIcons();
+        }
+
+        // Filter Functionality
+        function filterListings(category) {
+            // Update filter buttons
+            const buttons = document.querySelectorAll('#propertyFilters button');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-amberGold-500', 'text-slate-950');
+                btn.classList.add('bg-slate-800', 'text-slate-300');
+            });
+
+            event.target.classList.remove('bg-slate-800', 'text-slate-300');
+            event.target.classList.add('bg-amberGold-500', 'text-slate-950');
+
+            if (category === 'all') {
+                renderProperties(properties);
+            } else {
+                const filtered = properties.filter(p => p.category === category);
+                renderProperties(filtered);
+            }
+        }
+
+        // Hero Search Filter
+        function handleHeroSearch(e) {
+            e.preventDefault();
+            const category = document.getElementById('heroCategory').value;
+            const location = document.getElementById('heroLocation').value;
+            const typeSelect = document.querySelector('input[name="heroType"]:checked').value;
+
+            let filtered = properties;
+
+            if (category !== 'all') {
+                filtered = filtered.filter(p => p.category === category);
+            }
+
+            if (typeSelect) {
+                filtered = filtered.filter(p => p.type === typeSelect);
+            }
+
+            renderProperties(filtered);
+
+            // Smooth scroll to property section
+            document.getElementById('properties').scrollIntoView({ behavior: 'smooth' });
+            showToast('Filter Applied', `Found ${filtered.length} matching listings in Eldoret.`);
+        }
+
+        // Modal Functionality
+        function openModal(id) {
+            const prop = properties.find(p => p.id === id);
+            if (!prop) return;
+
+            document.getElementById('modalTitle').innerText = prop.title;
+            const modalBody = document.getElementById('modalBody');
+            
+            modalBody.innerHTML = `
+                <div class="space-y-4">
+                    <img src="${prop.image}" alt="${prop.title}" class="w-full h-56 object-cover rounded-xl border border-slate-700">
+                    
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs px-3 py-1 rounded-full bg-amberGold-500/20 text-amberGold-400 font-bold uppercase">${prop.category}</span>
+                        <span class="text-xl font-bold text-amberGold-400 font-heading">${prop.price}</span>
+                    </div>
+
+                    <p class="text-slate-300 leading-relaxed">${prop.description}</p>
+
+                    <div>
+                        <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-2">Key Specifications & Features</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                            ${prop.specs.map(spec => `
+                                <div class="flex items-center gap-2 p-2 rounded-lg bg-industrial-900 border border-slate-800 text-xs">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                                    <span>${spec}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row gap-3">
+                        <a href="tel:+254729950302" class="flex-1 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-center text-xs flex items-center justify-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-amberGold-400"></i> Call Agent (+254 729 950302)
+                        </a>
+                        <a href="https://wa.me/254729950302?text=Hello%20Moka%20Bros,%20I%20want%20to%20schedule%20a%20site%20visit%20for:%20${encodeURIComponent(prop.title)}" target="_blank" class="flex-1 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-center text-xs flex items-center justify-center gap-2">
+                            <i data-lucide="message-square" class="w-4 h-4"></i> WhatsApp Schedule Site Visit
+                        </a>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('propertyModal').classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        function closeModal() {
+            document.getElementById('propertyModal').classList.add('hidden');
+        }
+
+        // Lease & Yield Calculator Logic
+        function calculateLeaseYield() {
+            const sqft = parseFloat(document.getElementById('calcSqFt').value) || 0;
+            const rate = parseFloat(document.getElementById('calcRate').value) || 0;
+            const tenure = parseFloat(document.getElementById('calcTenure').value) || 1;
+            const capRate = parseFloat(document.getElementById('calcCapRate').value) || 9.5;
+
+            const monthlyRent = sqft * rate;
+            const annualRent = monthlyRent * 12;
+            const estimatedValuation = (annualRent / (capRate / 100));
+
+            document.getElementById('resMonthly').innerText = 'KES ' + monthlyRent.toLocaleString();
+            document.getElementById('resAnnual').innerText = 'KES ' + annualRent.toLocaleString();
+            document.getElementById('resValuation').innerText = 'KES ' + (estimatedValuation / 1000000).toFixed(1) + ' Million';
+        }
+
+        // Lead Submission Handler
+        function handleLeadSubmit(e) {
+            e.preventDefault();
+            showToast('Listing Request Submitted', 'Moka Bros Agency team will contact you shortly for valuation.');
+            e.target.reset();
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const isOpening = menu.classList.toggle('hidden') === false;
+            document.querySelector('[aria-controls="mobileMenu"]').setAttribute('aria-expanded', isOpening);
+        }
+
+        // Toast Notification Helper
+        function showToast(title, message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastTitle').innerText = title;
+            document.getElementById('toastMessage').innerText = message;
+
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 4500);
+        }
+    </script>
+</body>
+</html>
